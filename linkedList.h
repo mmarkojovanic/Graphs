@@ -18,11 +18,10 @@ class LinkedList
 		LinkedList<T>();
 		LinkedList<T>(T& data);
 		~LinkedList();
-		LinkedListNode<T>* At(int& i);
+		LinkedListNode<T>* At(int& i); //
 		void AddNode(T& data);
 		void Traverse();
+		LinkedListNode<T>* PopFirst();
+		bool RemoveNode(T* node);
 };
-
-
-
 #endif
